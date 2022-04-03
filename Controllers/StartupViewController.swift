@@ -9,6 +9,13 @@ import UIKit
 
 class StartupViewController: UIViewController {
     
+    #warning("Ильяс, привет!!")
+    #warning("PS: апи пока выключили, допиливаем")
+    #warning("Тагир, не стирай это")
+    
+    
+    #warning("Добавь DismissTransition, потом это сотри")
+    
     //MARK: - Outlets and vars
 
     @IBOutlet weak var logoImageView: UIImageView!
@@ -26,7 +33,6 @@ class StartupViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             self.loadLogo()
         }
-        // Do any additional setup after loading the view.
     }
     
     //MARK: - Funcs
@@ -35,11 +41,9 @@ class StartupViewController: UIViewController {
         pushLoginVC()
     }
     
-    
     @IBAction func didRegisterButton(_ sender: Any) {
         pushRegisterVC()
     }
-    
     
     func setCustomButtonStyle() {
         loginButton.customizeStartUp()
@@ -75,6 +79,9 @@ class StartupViewController: UIViewController {
             self.logoImageView.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
         }, completion: nil)
     }
+    
+    #warning("Добавь ShakeLogo, потом это сотри")
+    
 }
 
 extension StartupViewController: UIViewControllerTransitioningDelegate {

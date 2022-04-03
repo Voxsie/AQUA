@@ -94,7 +94,6 @@
         <!--Register View Controller-->
         <scene sceneID="oBH-tb-yC4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6hK-fj-Gsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="RegisterViewController" id="OZl-b1-zHc" customClass="RegisterViewController" customModule="AQUA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WN0-5z-Mn0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -109,8 +108,9 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Khr-5B-erU">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Khr-5B-erU">
                                 <rect key="frame" x="20" y="390.5" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Wp7-P7-4y5"/>
                                 </constraints>
@@ -129,16 +129,18 @@
                                     <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DAP-cS-91i">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DAP-cS-91i">
                                 <rect key="frame" x="20" y="480.5" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="jKj-6Q-gVV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Подтвердите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KpL-jf-cg8">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Подтвердите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KpL-jf-cg8">
                                 <rect key="frame" x="20" y="570.5" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="feW-HT-PBl"/>
                                 </constraints>
@@ -170,9 +172,16 @@
                             <constraint firstItem="Khr-5B-erU" firstAttribute="leading" secondItem="6yL-fH-Kbu" secondAttribute="leading" constant="20" id="xDI-fR-DP9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="KpL-jf-cg8" id="2Ma-Du-wT0"/>
+                        <outlet property="loginTextField" destination="Khr-5B-erU" id="dok-xG-MDK"/>
+                        <outlet property="passwordTextField" destination="DAP-cS-91i" id="34D-1V-LNh"/>
+                        <outlet property="registerButton" destination="WwO-Wr-UQV" id="bbw-zp-F2D"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hK-fj-Gsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="705" y="280"/>
+            <point key="canvasLocation" x="704.34782608695662" y="279.91071428571428"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="QJi-Fc-bEe">
@@ -194,8 +203,9 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O4b-gm-Y2G">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O4b-gm-Y2G">
                                 <rect key="frame" x="20" y="390.5" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0GT-6p-JMx"/>
                                 </constraints>
@@ -214,8 +224,9 @@
                                     <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHd-Wn-nDF">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHd-Wn-nDF">
                                 <rect key="frame" x="20" y="480.5" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="KX0-Rh-D70"/>
                                 </constraints>
@@ -244,6 +255,11 @@
                             <constraint firstItem="O4b-gm-Y2G" firstAttribute="top" secondItem="EtC-by-BB3" secondAttribute="bottom" constant="50" id="rFX-5s-vZe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="BOo-or-5Tx" id="3oq-N1-okJ"/>
+                        <outlet property="loginTextField" destination="O4b-gm-Y2G" id="pKf-7v-BUQ"/>
+                        <outlet property="passwordTextField" destination="dHd-Wn-nDF" id="jOd-Ni-wBk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Un0-vz-EgD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
