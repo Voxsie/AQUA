@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AA35410A27F99FE8002F70B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35410927F99FE8002F70B1 /* AppDelegate.swift */; };
 		AA35410C27F99FE8002F70B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35410B27F99FE8002F70B1 /* SceneDelegate.swift */; };
-		AA35410E27F99FE8002F70B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35410D27F99FE8002F70B1 /* ViewController.swift */; };
 		AA35411127F99FE8002F70B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA35410F27F99FE8002F70B1 /* Main.storyboard */; };
 		AA35411427F99FE8002F70B1 /* AQUA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA35411227F99FE8002F70B1 /* AQUA.xcdatamodeld */; };
 		AA35411627F99FEB002F70B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA35411527F99FEB002F70B1 /* Assets.xcassets */; };
@@ -17,6 +16,14 @@
 		AA35412427F99FEB002F70B1 /* AQUATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35412327F99FEB002F70B1 /* AQUATests.swift */; };
 		AA35412E27F99FEB002F70B1 /* AQUAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35412D27F99FEB002F70B1 /* AQUAUITests.swift */; };
 		AA35413027F99FEB002F70B1 /* AQUAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35412F27F99FEB002F70B1 /* AQUAUITestsLaunchTests.swift */; };
+		AA35413D27F9A01A002F70B1 /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35413C27F9A01A002F70B1 /* StartupViewController.swift */; };
+		AA35414F27F9A5D5002F70B1 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AA35414B27F9A513002F70B1 /* Inter-Regular.otf */; };
+		AA35415027F9A5D9002F70B1 /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AA35414E27F9A514002F70B1 /* Inter-Light.otf */; };
+		AA35415127F9A5DB002F70B1 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AA35414D27F9A514002F70B1 /* Inter-Medium.otf */; };
+		AA35415227F9A5DE002F70B1 /* TTCommons-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA35414C27F9A513002F70B1 /* TTCommons-Medium.ttf */; };
+		AA35415327F9A5E0002F70B1 /* TTCommons-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA35414A27F9A513002F70B1 /* TTCommons-Light.ttf */; };
+		AA35415527F9A923002F70B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35415427F9A923002F70B1 /* LoginViewController.swift */; };
+		AA35416027F9AA36002F70B1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35415F27F9AA36002F70B1 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +47,6 @@
 		AA35410627F99FE8002F70B1 /* AQUA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AQUA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA35410927F99FE8002F70B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA35410B27F99FE8002F70B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA35410D27F99FE8002F70B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA35411027F99FE8002F70B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA35411327F99FE8002F70B1 /* AQUA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AQUA.xcdatamodel; sourceTree = "<group>"; };
 		AA35411527F99FEB002F70B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +57,14 @@
 		AA35412927F99FEB002F70B1 /* AQUAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AQUAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA35412D27F99FEB002F70B1 /* AQUAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQUAUITests.swift; sourceTree = "<group>"; };
 		AA35412F27F99FEB002F70B1 /* AQUAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQUAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA35413C27F9A01A002F70B1 /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
+		AA35414A27F9A513002F70B1 /* TTCommons-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTCommons-Light.ttf"; sourceTree = "<group>"; };
+		AA35414B27F9A513002F70B1 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
+		AA35414C27F9A513002F70B1 /* TTCommons-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTCommons-Medium.ttf"; sourceTree = "<group>"; };
+		AA35414D27F9A514002F70B1 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
+		AA35414E27F9A514002F70B1 /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.otf"; sourceTree = "<group>"; };
+		AA35415427F9A923002F70B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AA35415F27F9AA36002F70B1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +115,13 @@
 		AA35410827F99FE8002F70B1 /* AQUA */ = {
 			isa = PBXGroup;
 			children = (
-				AA35410927F99FE8002F70B1 /* AppDelegate.swift */,
-				AA35410B27F99FE8002F70B1 /* SceneDelegate.swift */,
-				AA35410D27F99FE8002F70B1 /* ViewController.swift */,
-				AA35410F27F99FE8002F70B1 /* Main.storyboard */,
-				AA35411527F99FEB002F70B1 /* Assets.xcassets */,
-				AA35411727F99FEB002F70B1 /* LaunchScreen.storyboard */,
+				AA35416127F9AA60002F70B1 /* Animations */,
+				AA35415C27F9A9CB002F70B1 /* Models */,
+				AA35415B27F9A9C5002F70B1 /* Views */,
+				AA35415A27F9A9B2002F70B1 /* Resources */,
+				AA35415927F9A976002F70B1 /* Supporting Files */,
+				AA35415827F9A956002F70B1 /* Controllers */,
+				AA35414927F9A512002F70B1 /* Fonts */,
 				AA35411A27F99FEB002F70B1 /* Info.plist */,
 				AA35411227F99FE8002F70B1 /* AQUA.xcdatamodeld */,
 			);
@@ -128,6 +143,69 @@
 				AA35412F27F99FEB002F70B1 /* AQUAUITestsLaunchTests.swift */,
 			);
 			path = AQUAUITests;
+			sourceTree = "<group>";
+		};
+		AA35414927F9A512002F70B1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AA35414B27F9A513002F70B1 /* Inter-Regular.otf */,
+				AA35414E27F9A514002F70B1 /* Inter-Light.otf */,
+				AA35414D27F9A514002F70B1 /* Inter-Medium.otf */,
+				AA35414C27F9A513002F70B1 /* TTCommons-Medium.ttf */,
+				AA35414A27F9A513002F70B1 /* TTCommons-Light.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AA35415827F9A956002F70B1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA35415F27F9AA36002F70B1 /* RegisterViewController.swift */,
+				AA35413C27F9A01A002F70B1 /* StartupViewController.swift */,
+				AA35415427F9A923002F70B1 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			path = ../Controllers;
+			sourceTree = "<group>";
+		};
+		AA35415927F9A976002F70B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA35410927F99FE8002F70B1 /* AppDelegate.swift */,
+				AA35410B27F99FE8002F70B1 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA35415A27F9A9B2002F70B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA35411527F99FEB002F70B1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA35415B27F9A9C5002F70B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA35410F27F99FE8002F70B1 /* Main.storyboard */,
+				AA35411727F99FEB002F70B1 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA35415C27F9A9CB002F70B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA35416127F9AA60002F70B1 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +312,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA35415327F9A5E0002F70B1 /* TTCommons-Light.ttf in Resources */,
+				AA35415027F9A5D9002F70B1 /* Inter-Light.otf in Resources */,
+				AA35415227F9A5DE002F70B1 /* TTCommons-Medium.ttf in Resources */,
+				AA35415127F9A5DB002F70B1 /* Inter-Medium.otf in Resources */,
 				AA35411927F99FEB002F70B1 /* LaunchScreen.storyboard in Resources */,
+				AA35414F27F9A5D5002F70B1 /* Inter-Regular.otf in Resources */,
 				AA35411627F99FEB002F70B1 /* Assets.xcassets in Resources */,
 				AA35411127F99FE8002F70B1 /* Main.storyboard in Resources */,
 			);
@@ -261,10 +344,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA35410E27F99FE8002F70B1 /* ViewController.swift in Sources */,
+				AA35415527F9A923002F70B1 /* LoginViewController.swift in Sources */,
+				AA35416027F9AA36002F70B1 /* RegisterViewController.swift in Sources */,
 				AA35411427F99FE8002F70B1 /* AQUA.xcdatamodeld in Sources */,
 				AA35410A27F99FE8002F70B1 /* AppDelegate.swift in Sources */,
 				AA35410C27F99FE8002F70B1 /* SceneDelegate.swift in Sources */,
+				AA35413D27F9A01A002F70B1 /* StartupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +532,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -458,7 +544,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -475,6 +561,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,7 +573,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
