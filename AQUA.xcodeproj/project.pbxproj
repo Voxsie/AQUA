@@ -24,6 +24,7 @@
 		AA35415327F9A5E0002F70B1 /* TTCommons-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA35414A27F9A513002F70B1 /* TTCommons-Light.ttf */; };
 		AA35415527F9A923002F70B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35415427F9A923002F70B1 /* LoginViewController.swift */; };
 		AA35416027F9AA36002F70B1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35415F27F9AA36002F70B1 /* RegisterViewController.swift */; };
+		AA35416327F9B0A6002F70B1 /* PresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35416227F9B0A6002F70B1 /* PresentTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		AA35414E27F9A514002F70B1 /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.otf"; sourceTree = "<group>"; };
 		AA35415427F9A923002F70B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA35415F27F9AA36002F70B1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AA35416227F9B0A6002F70B1 /* PresentTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 		AA35416127F9AA60002F70B1 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				AA35416227F9B0A6002F70B1 /* PresentTransition.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				AA35416027F9AA36002F70B1 /* RegisterViewController.swift in Sources */,
 				AA35411427F99FE8002F70B1 /* AQUA.xcdatamodeld in Sources */,
 				AA35410A27F99FE8002F70B1 /* AppDelegate.swift in Sources */,
+				AA35416327F9B0A6002F70B1 /* PresentTransition.swift in Sources */,
 				AA35410C27F99FE8002F70B1 /* SceneDelegate.swift in Sources */,
 				AA35413D27F9A01A002F70B1 /* StartupViewController.swift in Sources */,
 			);

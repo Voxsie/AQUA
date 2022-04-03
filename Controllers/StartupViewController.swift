@@ -8,7 +8,10 @@
 import UIKit
 
 class StartupViewController: UIViewController {
+    
+    //MARK: - Outlets and vars
 
+    @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     
@@ -19,8 +22,24 @@ class StartupViewController: UIViewController {
         setCustomButtonStyle()
         setGradientBackground()
 
+        let seconds = 3.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            self.loadLogo()
+        }
         // Do any additional setup after loading the view.
     }
+    
+    //MARK: - Funcs
+    
+    @IBAction func didLoginButton(_ sender: Any) {
+        pushLoginVC()
+    }
+    
+    
+    @IBAction func didRegisterButton(_ sender: Any) {
+        pushRegisterVC()
+    }
+    
     
     func setCustomButtonStyle() {
         loginButton.customizeStartUp()
@@ -37,6 +56,32 @@ class StartupViewController: UIViewController {
         self.view.layer.insertSublayer(gradientLayer, at:0)
     }
     
+    func pushLoginVC() {
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController
+        vc!.modalPresentationStyle = .custom
+        vc!.transitioningDelegate = self
+        self.present(vc!, animated: true, completion: nil)
+    }
+    
+    func pushRegisterVC() {
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController
+        vc!.modalPresentationStyle = .custom
+        vc!.transitioningDelegate = self
+        self.present(vc!, animated: true, completion: nil)
+    }
+    //MARK: - Animations
+    private func loadLogo() {
+        UIView.animate(withDuration: 1.0, delay: 0, options: [.autoreverse, .repeat, .allowUserInteraction],animations: {
+            self.logoImageView.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        }, completion: nil)
+    }
+}
+
+extension StartupViewController: UIViewControllerTransitioningDelegate {
+
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return PresentTransition()
+    }
 }
 
 extension UIButton {

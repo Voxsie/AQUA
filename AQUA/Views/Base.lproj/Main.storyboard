@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.otf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Startup View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -27,6 +32,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Войти в аккаунт">
                                     <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="didLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTI-XX-dWl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IM-iT-cav">
                                 <rect key="frame" x="20" y="782" width="374" height="60"/>
@@ -39,6 +47,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Зарегистрироваться">
                                     <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="didRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zce-3J-gtZ"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aquaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yLo-l4-4Y4">
                                 <rect key="frame" x="87" y="64" width="240" height="240"/>
@@ -47,8 +58,8 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AQUA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4V-IQ-dry">
-                                <rect key="frame" x="20" y="312" width="374" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <rect key="frame" x="20" y="312" width="374" height="48.5"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -72,6 +83,7 @@
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="4n2-Qj-TZM" id="tVG-aT-cey"/>
+                        <outlet property="logoImageView" destination="yLo-l4-4Y4" id="1UH-Je-EfT"/>
                         <outlet property="registerButton" destination="1IM-iT-cav" id="9BV-AU-hr6"/>
                     </connections>
                 </viewController>
@@ -82,39 +94,164 @@
         <!--Register View Controller-->
         <scene sceneID="oBH-tb-yC4">
             <objects>
-                <viewController id="OZl-b1-zHc" customClass="RegisterViewController" customModule="AQUA" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hK-fj-Gsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="RegisterViewController" id="OZl-b1-zHc" customClass="RegisterViewController" customModule="AQUA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WN0-5z-Mn0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aquaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rVg-ab-Ie5">
+                                <rect key="frame" x="87" y="64" width="240" height="240"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHk-pU-ec9">
+                                <rect key="frame" x="20" y="304" width="374" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Khr-5B-erU">
+                                <rect key="frame" x="20" y="390.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Wp7-P7-4y5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwO-Wr-UQV">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sXm-W7-L2L"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Зарегистрироваться">
+                                    <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DAP-cS-91i">
+                                <rect key="frame" x="20" y="480.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jKj-6Q-gVV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Подтвердите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KpL-jf-cg8">
+                                <rect key="frame" x="20" y="570.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="feW-HT-PBl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6yL-fH-Kbu"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstItem="rVg-ab-Ie5" firstAttribute="top" secondItem="6yL-fH-Kbu" secondAttribute="top" constant="20" id="3CF-i1-0Ck"/>
+                            <constraint firstItem="6yL-fH-Kbu" firstAttribute="trailing" secondItem="rVg-ab-Ie5" secondAttribute="trailing" constant="87" id="6Iw-mZ-tsg"/>
+                            <constraint firstItem="KpL-jf-cg8" firstAttribute="top" secondItem="DAP-cS-91i" secondAttribute="bottom" constant="40" id="80P-44-wmq"/>
+                            <constraint firstItem="Khr-5B-erU" firstAttribute="top" secondItem="MHk-pU-ec9" secondAttribute="bottom" constant="50" id="BD7-Gq-whx"/>
+                            <constraint firstItem="6yL-fH-Kbu" firstAttribute="trailing" secondItem="DAP-cS-91i" secondAttribute="trailing" constant="20" id="E5X-K9-iVe"/>
+                            <constraint firstItem="rVg-ab-Ie5" firstAttribute="width" secondItem="rVg-ab-Ie5" secondAttribute="height" multiplier="1:1" id="Gdp-t7-1BC"/>
+                            <constraint firstItem="MHk-pU-ec9" firstAttribute="top" secondItem="rVg-ab-Ie5" secondAttribute="bottom" id="Ikl-mY-YQe"/>
+                            <constraint firstItem="6yL-fH-Kbu" firstAttribute="trailing" secondItem="KpL-jf-cg8" secondAttribute="trailing" constant="20" id="J0p-Tl-nPe"/>
+                            <constraint firstItem="6yL-fH-Kbu" firstAttribute="trailing" secondItem="MHk-pU-ec9" secondAttribute="trailing" constant="20" id="Rso-TG-EDS"/>
+                            <constraint firstItem="KpL-jf-cg8" firstAttribute="leading" secondItem="6yL-fH-Kbu" secondAttribute="leading" constant="20" id="St7-iG-oi7"/>
+                            <constraint firstItem="WwO-Wr-UQV" firstAttribute="leading" secondItem="6yL-fH-Kbu" secondAttribute="leading" constant="20" id="V4K-Vu-srO"/>
+                            <constraint firstItem="DAP-cS-91i" firstAttribute="leading" secondItem="6yL-fH-Kbu" secondAttribute="leading" constant="20" id="bAt-OG-gue"/>
+                            <constraint firstItem="MHk-pU-ec9" firstAttribute="leading" secondItem="6yL-fH-Kbu" secondAttribute="leading" constant="20" id="h6I-Wo-hVR"/>
+                            <constraint firstItem="6yL-fH-Kbu" firstAttribute="trailing" secondItem="Khr-5B-erU" secondAttribute="trailing" constant="20" id="hEp-kg-Bkw"/>
+                            <constraint firstItem="DAP-cS-91i" firstAttribute="top" secondItem="Khr-5B-erU" secondAttribute="bottom" constant="40" id="jbi-sO-v42"/>
+                            <constraint firstItem="6yL-fH-Kbu" firstAttribute="trailing" secondItem="WwO-Wr-UQV" secondAttribute="trailing" constant="20" id="pap-F9-bP6"/>
+                            <constraint firstItem="6yL-fH-Kbu" firstAttribute="bottom" secondItem="WwO-Wr-UQV" secondAttribute="bottom" constant="20" id="seQ-ec-CIa"/>
+                            <constraint firstItem="rVg-ab-Ie5" firstAttribute="leading" secondItem="6yL-fH-Kbu" secondAttribute="leading" constant="87" id="vRE-Dd-Kz2"/>
+                            <constraint firstItem="Khr-5B-erU" firstAttribute="leading" secondItem="6yL-fH-Kbu" secondAttribute="leading" constant="20" id="xDI-fR-DP9"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6hK-fj-Gsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="705" y="280"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="QJi-Fc-bEe">
             <objects>
-                <viewController id="7qc-EM-c7G" customClass="LoginViewController" customModule="AQUA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="7qc-EM-c7G" customClass="LoginViewController" customModule="AQUA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uCj-eR-EOM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aquaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="SLD-52-8if">
+                                <rect key="frame" x="87" y="64" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SLD-52-8if" secondAttribute="height" multiplier="1:1" id="S2L-Af-duW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Авторизация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtC-by-BB3">
+                                <rect key="frame" x="20" y="304" width="374" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O4b-gm-Y2G">
+                                <rect key="frame" x="20" y="390.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0GT-6p-JMx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOo-or-5Tx">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="doE-OF-hSF"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Войти в аккаунт">
+                                    <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHd-Wn-nDF">
+                                <rect key="frame" x="20" y="480.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KX0-Rh-D70"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kf1-tx-yjF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstItem="kf1-tx-yjF" firstAttribute="trailing" secondItem="EtC-by-BB3" secondAttribute="trailing" constant="20" id="1dM-LZ-7Zl"/>
+                            <constraint firstItem="EtC-by-BB3" firstAttribute="top" secondItem="SLD-52-8if" secondAttribute="bottom" id="210-gX-xcm"/>
+                            <constraint firstItem="SLD-52-8if" firstAttribute="leading" secondItem="kf1-tx-yjF" secondAttribute="leading" constant="87" id="633-6Z-pui"/>
+                            <constraint firstItem="kf1-tx-yjF" firstAttribute="trailing" secondItem="BOo-or-5Tx" secondAttribute="trailing" constant="20" id="DfE-NU-3bV"/>
+                            <constraint firstItem="O4b-gm-Y2G" firstAttribute="leading" secondItem="kf1-tx-yjF" secondAttribute="leading" constant="20" id="HD0-cc-14t"/>
+                            <constraint firstItem="dHd-Wn-nDF" firstAttribute="leading" secondItem="kf1-tx-yjF" secondAttribute="leading" constant="20" id="KhB-Fl-ZGI"/>
+                            <constraint firstItem="SLD-52-8if" firstAttribute="width" secondItem="SLD-52-8if" secondAttribute="height" multiplier="1:1" id="LZG-gn-0hO"/>
+                            <constraint firstItem="kf1-tx-yjF" firstAttribute="trailing" secondItem="dHd-Wn-nDF" secondAttribute="trailing" constant="20" id="Qbc-ax-NIH"/>
+                            <constraint firstItem="BOo-or-5Tx" firstAttribute="leading" secondItem="kf1-tx-yjF" secondAttribute="leading" constant="20" id="Z3n-W0-QWm"/>
+                            <constraint firstItem="dHd-Wn-nDF" firstAttribute="top" secondItem="O4b-gm-Y2G" secondAttribute="bottom" constant="40" id="bnM-6J-eMN"/>
+                            <constraint firstItem="kf1-tx-yjF" firstAttribute="trailing" secondItem="O4b-gm-Y2G" secondAttribute="trailing" constant="20" id="h5r-Ge-4tD"/>
+                            <constraint firstItem="EtC-by-BB3" firstAttribute="leading" secondItem="kf1-tx-yjF" secondAttribute="leading" constant="20" id="jsi-ef-acj"/>
+                            <constraint firstItem="kf1-tx-yjF" firstAttribute="bottom" secondItem="BOo-or-5Tx" secondAttribute="bottom" constant="20" id="n0J-Ed-oUI"/>
+                            <constraint firstItem="SLD-52-8if" firstAttribute="top" secondItem="kf1-tx-yjF" secondAttribute="top" constant="20" id="nQr-Cv-RuR"/>
+                            <constraint firstItem="kf1-tx-yjF" firstAttribute="trailing" secondItem="SLD-52-8if" secondAttribute="trailing" constant="87" id="pm5-iO-St9"/>
+                            <constraint firstItem="O4b-gm-Y2G" firstAttribute="top" secondItem="EtC-by-BB3" secondAttribute="bottom" constant="50" id="rFX-5s-vZe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Un0-vz-EgD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="-389"/>
+            <point key="canvasLocation" x="698.55072463768124" y="-389.0625"/>
         </scene>
     </scenes>
     <resources>
         <image name="aquaLogo" width="512" height="512"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
