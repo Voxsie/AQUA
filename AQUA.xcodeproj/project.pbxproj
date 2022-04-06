@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E8B1B9927FE237C00862C26 /* DepositResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B8E27FE237C00862C26 /* DepositResponse.swift */; };
+		1E8B1B9A27FE237C00862C26 /* ConfigPaymentsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B8F27FE237C00862C26 /* ConfigPaymentsResponse.swift */; };
+		1E8B1B9B27FE237C00862C26 /* WalletListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9027FE237C00862C26 /* WalletListResponse.swift */; };
+		1E8B1B9C27FE237C00862C26 /* AuthorizationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9127FE237C00862C26 /* AuthorizationResponse.swift */; };
+		1E8B1B9D27FE237C00862C26 /* HistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9227FE237C00862C26 /* HistoryResponse.swift */; };
+		1E8B1B9E27FE237C00862C26 /* PaymentProcessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9327FE237C00862C26 /* PaymentProcessResponse.swift */; };
+		1E8B1B9F27FE237C00862C26 /* CodeConfirmResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9427FE237C00862C26 /* CodeConfirmResponse.swift */; };
+		1E8B1BA027FE237C00862C26 /* WithdrawResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9527FE237C00862C26 /* WithdrawResponse.swift */; };
+		1E8B1BA127FE237C00862C26 /* PayoffMethodsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9627FE237C00862C26 /* PayoffMethodsResponse.swift */; };
+		1E8B1BA227FE237C00862C26 /* TransferResponseswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9727FE237C00862C26 /* TransferResponseswift.swift */; };
+		1E8B1BA327FE237C00862C26 /* RegistrationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9827FE237C00862C26 /* RegistrationResponse.swift */; };
 		83E5AA1E949B58D9F731BECD /* Pods_AQUATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBB02D93C016D44A9EAB530 /* Pods_AQUATests.framework */; };
 		A305B8C0E716132B7403222F /* Pods_AQUA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994523CFDFFA46AFCD950D6E /* Pods_AQUA.framework */; };
 		AA35410A27F99FE8002F70B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35410927F99FE8002F70B1 /* AppDelegate.swift */; };
@@ -49,6 +60,17 @@
 
 /* Begin PBXFileReference section */
 		1AB80A849BED4168C15F6589 /* Pods-AQUATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQUATests.debug.xcconfig"; path = "Target Support Files/Pods-AQUATests/Pods-AQUATests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E8B1B8E27FE237C00862C26 /* DepositResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepositResponse.swift; sourceTree = "<group>"; };
+		1E8B1B8F27FE237C00862C26 /* ConfigPaymentsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigPaymentsResponse.swift; sourceTree = "<group>"; };
+		1E8B1B9027FE237C00862C26 /* WalletListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletListResponse.swift; sourceTree = "<group>"; };
+		1E8B1B9127FE237C00862C26 /* AuthorizationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationResponse.swift; sourceTree = "<group>"; };
+		1E8B1B9227FE237C00862C26 /* HistoryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryResponse.swift; sourceTree = "<group>"; };
+		1E8B1B9327FE237C00862C26 /* PaymentProcessResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentProcessResponse.swift; sourceTree = "<group>"; };
+		1E8B1B9427FE237C00862C26 /* CodeConfirmResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeConfirmResponse.swift; sourceTree = "<group>"; };
+		1E8B1B9527FE237C00862C26 /* WithdrawResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithdrawResponse.swift; sourceTree = "<group>"; };
+		1E8B1B9627FE237C00862C26 /* PayoffMethodsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffMethodsResponse.swift; sourceTree = "<group>"; };
+		1E8B1B9727FE237C00862C26 /* TransferResponseswift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferResponseswift.swift; sourceTree = "<group>"; };
+		1E8B1B9827FE237C00862C26 /* RegistrationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationResponse.swift; sourceTree = "<group>"; };
 		1F955F3130BC467C75B72C14 /* Pods_AQUA_AQUAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AQUA_AQUAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBB02D93C016D44A9EAB530 /* Pods_AQUATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AQUATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7D2D05CA21D9D7C731FCD6 /* Pods-AQUA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQUA.release.xcconfig"; path = "Target Support Files/Pods-AQUA/Pods-AQUA.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +131,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E8B1B8D27FE237C00862C26 /* ResponseData */ = {
+			isa = PBXGroup;
+			children = (
+				1E8B1B8E27FE237C00862C26 /* DepositResponse.swift */,
+				1E8B1B8F27FE237C00862C26 /* ConfigPaymentsResponse.swift */,
+				1E8B1B9027FE237C00862C26 /* WalletListResponse.swift */,
+				1E8B1B9127FE237C00862C26 /* AuthorizationResponse.swift */,
+				1E8B1B9227FE237C00862C26 /* HistoryResponse.swift */,
+				1E8B1B9327FE237C00862C26 /* PaymentProcessResponse.swift */,
+				1E8B1B9427FE237C00862C26 /* CodeConfirmResponse.swift */,
+				1E8B1B9527FE237C00862C26 /* WithdrawResponse.swift */,
+				1E8B1B9627FE237C00862C26 /* PayoffMethodsResponse.swift */,
+				1E8B1B9727FE237C00862C26 /* TransferResponseswift.swift */,
+				1E8B1B9827FE237C00862C26 /* RegistrationResponse.swift */,
+			);
+			path = ResponseData;
+			sourceTree = "<group>";
+		};
 		55030A3379BA340760E80C33 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +159,6 @@
 				1AB80A849BED4168C15F6589 /* Pods-AQUATests.debug.xcconfig */,
 				F55E18D7D6261C15ED181BFB /* Pods-AQUATests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -240,6 +279,7 @@
 		AA35415C27F9A9CB002F70B1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1E8B1B8D27FE237C00862C26 /* ResponseData */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -496,13 +536,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8B1B9F27FE237C00862C26 /* CodeConfirmResponse.swift in Sources */,
 				AA35415527F9A923002F70B1 /* LoginViewController.swift in Sources */,
+				1E8B1B9D27FE237C00862C26 /* HistoryResponse.swift in Sources */,
+				1E8B1BA327FE237C00862C26 /* RegistrationResponse.swift in Sources */,
+				1E8B1B9A27FE237C00862C26 /* ConfigPaymentsResponse.swift in Sources */,
 				AA35416027F9AA36002F70B1 /* RegisterViewController.swift in Sources */,
 				AA35411427F99FE8002F70B1 /* AQUA.xcdatamodeld in Sources */,
+				1E8B1BA027FE237C00862C26 /* WithdrawResponse.swift in Sources */,
+				1E8B1B9E27FE237C00862C26 /* PaymentProcessResponse.swift in Sources */,
+				1E8B1BA227FE237C00862C26 /* TransferResponseswift.swift in Sources */,
 				AA35410A27F99FE8002F70B1 /* AppDelegate.swift in Sources */,
+				1E8B1B9B27FE237C00862C26 /* WalletListResponse.swift in Sources */,
 				AA35416327F9B0A6002F70B1 /* PresentTransition.swift in Sources */,
 				AA35410C27F99FE8002F70B1 /* SceneDelegate.swift in Sources */,
 				AA35413D27F9A01A002F70B1 /* StartupViewController.swift in Sources */,
+				1E8B1B9927FE237C00862C26 /* DepositResponse.swift in Sources */,
+				1E8B1BA127FE237C00862C26 /* PayoffMethodsResponse.swift in Sources */,
+				1E8B1B9C27FE237C00862C26 /* AuthorizationResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
