@@ -1,0 +1,6 @@
+framework module Pods_AQUA {
+  umbrella header "Pods-AQUA-umbrella.h"
+
+  export *
+  module * { export * }
+}

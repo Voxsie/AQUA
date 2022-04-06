@@ -1,0 +1,6 @@
+framework module Pods_AQUA_AQUAUITests {
+  umbrella header "Pods-AQUA-AQUAUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
