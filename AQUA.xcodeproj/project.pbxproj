@@ -18,6 +18,9 @@
 		1E8B1BA127FE237C00862C26 /* PayoffMethodsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9627FE237C00862C26 /* PayoffMethodsResponse.swift */; };
 		1E8B1BA227FE237C00862C26 /* TransferResponseswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9727FE237C00862C26 /* TransferResponseswift.swift */; };
 		1E8B1BA327FE237C00862C26 /* RegistrationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9827FE237C00862C26 /* RegistrationResponse.swift */; };
+		1E8B1BB427FF638F00862C26 /* TestAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8B1BB327FF638F00862C26 /* TestAnimation.storyboard */; };
+		1E8B1BB627FF64F500862C26 /* AlertAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1BB527FF64F500862C26 /* AlertAnimationViewController.swift */; };
+		1E8B1BB927FF685400862C26 /* CardAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1BB827FF685400862C26 /* CardAnimationViewController.swift */; };
 		83E5AA1E949B58D9F731BECD /* Pods_AQUATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBB02D93C016D44A9EAB530 /* Pods_AQUATests.framework */; };
 		A305B8C0E716132B7403222F /* Pods_AQUA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994523CFDFFA46AFCD950D6E /* Pods_AQUA.framework */; };
 		AA35410A27F99FE8002F70B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35410927F99FE8002F70B1 /* AppDelegate.swift */; };
@@ -71,6 +74,9 @@
 		1E8B1B9627FE237C00862C26 /* PayoffMethodsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffMethodsResponse.swift; sourceTree = "<group>"; };
 		1E8B1B9727FE237C00862C26 /* TransferResponseswift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferResponseswift.swift; sourceTree = "<group>"; };
 		1E8B1B9827FE237C00862C26 /* RegistrationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationResponse.swift; sourceTree = "<group>"; };
+		1E8B1BB327FF638F00862C26 /* TestAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestAnimation.storyboard; sourceTree = "<group>"; };
+		1E8B1BB527FF64F500862C26 /* AlertAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAnimationViewController.swift; sourceTree = "<group>"; };
+		1E8B1BB827FF685400862C26 /* CardAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAnimationViewController.swift; sourceTree = "<group>"; };
 		1F955F3130BC467C75B72C14 /* Pods_AQUA_AQUAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AQUA_AQUAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBB02D93C016D44A9EAB530 /* Pods_AQUATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AQUATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7D2D05CA21D9D7C731FCD6 /* Pods-AQUA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQUA.release.xcconfig"; path = "Target Support Files/Pods-AQUA/Pods-AQUA.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +155,16 @@
 			path = ResponseData;
 			sourceTree = "<group>";
 		};
+		1E8B1BB227FF636F00862C26 /* TestAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1E8B1BB327FF638F00862C26 /* TestAnimation.storyboard */,
+				1E8B1BB527FF64F500862C26 /* AlertAnimationViewController.swift */,
+				1E8B1BB827FF685400862C26 /* CardAnimationViewController.swift */,
+			);
+			path = TestAnimation;
+			sourceTree = "<group>";
+		};
 		55030A3379BA340760E80C33 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +213,7 @@
 		AA35410827F99FE8002F70B1 /* AQUA */ = {
 			isa = PBXGroup;
 			children = (
+				1E8B1BB227FF636F00862C26 /* TestAnimation */,
 				AA35416127F9AA60002F70B1 /* Animations */,
 				AA35415C27F9A9CB002F70B1 /* Models */,
 				AA35415B27F9A9C5002F70B1 /* Views */,
@@ -405,6 +422,7 @@
 				AA35415027F9A5D9002F70B1 /* Inter-Light.otf in Resources */,
 				AA35415227F9A5DE002F70B1 /* TTCommons-Medium.ttf in Resources */,
 				AA35415127F9A5DB002F70B1 /* Inter-Medium.otf in Resources */,
+				1E8B1BB427FF638F00862C26 /* TestAnimation.storyboard in Resources */,
 				AA35411927F99FEB002F70B1 /* LaunchScreen.storyboard in Resources */,
 				AA35414F27F9A5D5002F70B1 /* Inter-Regular.otf in Resources */,
 				AA35411627F99FEB002F70B1 /* Assets.xcassets in Resources */,
@@ -546,6 +564,7 @@
 				1E8B1BA027FE237C00862C26 /* WithdrawResponse.swift in Sources */,
 				1E8B1B9E27FE237C00862C26 /* PaymentProcessResponse.swift in Sources */,
 				1E8B1BA227FE237C00862C26 /* TransferResponseswift.swift in Sources */,
+				1E8B1BB627FF64F500862C26 /* AlertAnimationViewController.swift in Sources */,
 				AA35410A27F99FE8002F70B1 /* AppDelegate.swift in Sources */,
 				1E8B1B9B27FE237C00862C26 /* WalletListResponse.swift in Sources */,
 				AA35416327F9B0A6002F70B1 /* PresentTransition.swift in Sources */,
@@ -554,6 +573,7 @@
 				1E8B1B9927FE237C00862C26 /* DepositResponse.swift in Sources */,
 				1E8B1BA127FE237C00862C26 /* PayoffMethodsResponse.swift in Sources */,
 				1E8B1B9C27FE237C00862C26 /* AuthorizationResponse.swift in Sources */,
+				1E8B1BB927FF685400862C26 /* CardAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
