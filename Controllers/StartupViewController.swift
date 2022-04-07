@@ -9,12 +9,11 @@ import UIKit
 
 class StartupViewController: UIViewController {
     
-    #warning("Ильяс, привет!!")
+    #warning("Ильяс, привет!!, просто пройдись по варнингам и все дз увидишь))")
     #warning("PS: апи пока выключили, допиливаем")
     #warning("Тагир, не стирай это")
     
     
-    #warning("Добавь DismissTransition, потом это сотри")
     
     //MARK: - Outlets and vars
 
@@ -73,6 +72,9 @@ class StartupViewController: UIViewController {
         vc!.transitioningDelegate = self
         self.present(vc!, animated: true, completion: nil)
     }
+    
+    #warning("Желтиков - Анимации")
+    
     //MARK: - Animations
     private func loadLogo() {
         UIView.animate(withDuration: 1.0, delay: 0, options: [.autoreverse, .repeat, .allowUserInteraction],animations: {
@@ -80,7 +82,16 @@ class StartupViewController: UIViewController {
         }, completion: nil)
     }
     
-    #warning("Добавь ShakeLogo, потом это сотри")
+    func shakeLabel() {
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.07
+        animation.repeatCount = 4
+        animation.autoreverses = true
+        animation.fromValue = NSValue(cgPoint: CGPoint(x: logoImageView.center.x - 10, y: logoImageView.center.y))
+        animation.toValue = NSValue(cgPoint: CGPoint(x: logoImageView.center.x + 10, y: logoImageView.center.y))
+        logoImageView.layer.add(animation, forKey: "position")
+        
+    }
     
 }
 

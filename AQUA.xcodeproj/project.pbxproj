@@ -40,6 +40,7 @@
 		AA35415527F9A923002F70B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35415427F9A923002F70B1 /* LoginViewController.swift */; };
 		AA35416027F9AA36002F70B1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35415F27F9AA36002F70B1 /* RegisterViewController.swift */; };
 		AA35416327F9B0A6002F70B1 /* PresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35416227F9B0A6002F70B1 /* PresentTransition.swift */; };
+		AA5B9E7627FF63830014C922 /* DismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B9E7527FF63830014C922 /* DismissTransition.swift */; };
 		AF634C86F3B4A96F09156B96 /* Pods_AQUA_AQUAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F955F3130BC467C75B72C14 /* Pods_AQUA_AQUAUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		AA35415427F9A923002F70B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA35415F27F9AA36002F70B1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AA35416227F9B0A6002F70B1 /* PresentTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTransition.swift; sourceTree = "<group>"; };
+		AA5B9E7527FF63830014C922 /* DismissTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissTransition.swift; sourceTree = "<group>"; };
 		C58E5753B8FECF1A8A12ECC2 /* Pods-AQUA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQUA.debug.xcconfig"; path = "Target Support Files/Pods-AQUA/Pods-AQUA.debug.xcconfig"; sourceTree = "<group>"; };
 		F55E18D7D6261C15ED181BFB /* Pods-AQUATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQUATests.release.xcconfig"; path = "Target Support Files/Pods-AQUATests/Pods-AQUATests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -294,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				AA35416227F9B0A6002F70B1 /* PresentTransition.swift */,
+				AA5B9E7527FF63830014C922 /* DismissTransition.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				1E8B1BA527FE251200862C26 /* Request.swift in Sources */,
 				AA35416327F9B0A6002F70B1 /* PresentTransition.swift in Sources */,
 				AA35410C27F99FE8002F70B1 /* SceneDelegate.swift in Sources */,
+				AA5B9E7627FF63830014C922 /* DismissTransition.swift in Sources */,
 				AA35413D27F9A01A002F70B1 /* StartupViewController.swift in Sources */,
 				1E8B1B9927FE237C00862C26 /* DepositResponse.swift in Sources */,
 				1E8B1BA127FE237C00862C26 /* PayoffMethodsResponse.swift in Sources */,
@@ -748,6 +752,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -778,6 +783,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,11 +9,15 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+//MARK: - IBOUtlets
+    
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
     
+//MARK: - Funcs
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +27,8 @@ class RegisterViewController: UIViewController {
         
     }
 }
+
+//MARK: - Extensions
 
 //MARK: - Customizing
 extension RegisterViewController {
@@ -80,7 +86,7 @@ extension RegisterViewController {
         loginTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
         confirmPasswordTextField.resignFirstResponder()
-        }
+    }
 
     @objc private func handleSwipeGesture(sender: UISwipeGestureRecognizer) {
         sender.direction = .right

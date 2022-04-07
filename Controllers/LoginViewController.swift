@@ -57,7 +57,7 @@ extension LoginViewController {
     }
 }
 
-
+#warning("Желтиков - UITapGestureRecognizer, UISwipeGestureRecognizer")
 //MARK: - Gestures
 extension LoginViewController {
     func tapSwipeRegonizer() {
