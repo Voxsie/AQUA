@@ -63,18 +63,27 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оплачивай. Переводи. Принимай." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsP-La-Cz8">
+                                <rect key="frame" x="40" y="370.5" width="334" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                         <constraints>
                             <constraint firstItem="4n2-Qj-TZM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="95F-aj-QTK"/>
                             <constraint firstItem="yLo-l4-4Y4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ata-EY-Ipf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fsP-La-Cz8" secondAttribute="trailing" constant="40" id="IAg-cu-Tdv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i4V-IQ-dry" secondAttribute="trailing" constant="20" id="JjD-W3-irn"/>
                             <constraint firstItem="1IM-iT-cav" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="U36-pB-W2X"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yLo-l4-4Y4" secondAttribute="trailing" constant="87" id="U9j-VY-J2F"/>
                             <constraint firstItem="1IM-iT-cav" firstAttribute="top" secondItem="4n2-Qj-TZM" secondAttribute="bottom" constant="20" id="bEm-7Z-Jis"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1IM-iT-cav" secondAttribute="trailing" constant="20" id="dZi-rv-bmj"/>
+                            <constraint firstItem="fsP-La-Cz8" firstAttribute="top" secondItem="i4V-IQ-dry" secondAttribute="bottom" constant="10" id="eUw-fX-bnr"/>
                             <constraint firstItem="yLo-l4-4Y4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="hkL-so-sLe"/>
+                            <constraint firstItem="fsP-La-Cz8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="luE-as-7TB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1IM-iT-cav" secondAttribute="bottom" constant="20" id="rmL-Du-350"/>
                             <constraint firstItem="i4V-IQ-dry" firstAttribute="top" secondItem="yLo-l4-4Y4" secondAttribute="bottom" constant="8" symbolic="YES" id="tCl-hI-InO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4n2-Qj-TZM" secondAttribute="trailing" constant="20" id="yhq-9A-x5H"/>

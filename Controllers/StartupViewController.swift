@@ -27,6 +27,8 @@ class StartupViewController: UIViewController {
         
         setCustomButtonStyle()
         setGradientBackground()
+        
+        shakeLogo()
 
         let seconds = 3.0
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
@@ -82,7 +84,7 @@ class StartupViewController: UIViewController {
         }, completion: nil)
     }
     
-    func shakeLabel() {
+    func shakeLogo() {
         let animation = CABasicAnimation(keyPath: "position")
         animation.duration = 0.07
         animation.repeatCount = 4
@@ -100,7 +102,12 @@ extension StartupViewController: UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return PresentTransition()
     }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DismissTransition()
+    }
 }
+
 
 extension UIButton {
     func customizeStartUp() {
