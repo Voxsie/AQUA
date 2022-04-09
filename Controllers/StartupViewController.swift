@@ -78,22 +78,22 @@ class StartupViewController: UIViewController {
     #warning("Желтиков - Анимации")
     
     //MARK: - Animations
-    private func loadLogo() {
-        UIView.animate(withDuration: 1.0, delay: 0, options: [.autoreverse, .repeat, .allowUserInteraction],animations: {
-            self.logoImageView.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-        }, completion: nil)
-    }
-    
-    func shakeLogo() {
-        let animation = CABasicAnimation(keyPath: "position")
-        animation.duration = 0.07
-        animation.repeatCount = 4
-        animation.autoreverses = true
-        animation.fromValue = NSValue(cgPoint: CGPoint(x: logoImageView.center.x - 10, y: logoImageView.center.y))
-        animation.toValue = NSValue(cgPoint: CGPoint(x: logoImageView.center.x + 10, y: logoImageView.center.y))
-        logoImageView.layer.add(animation, forKey: "position")
-        
-    }
+//    private func loadLogo() {
+//        UIView.animate(withDuration: 1.0, delay: 0, options: [.autoreverse, .repeat, .allowUserInteraction],animations: {
+//            self.logoImageView.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+//        }, completion: nil)
+//    }
+//
+//    func shakeLogo() {
+//        let animation = CABasicAnimation(keyPath: "position")
+//        animation.duration = 0.07
+//        animation.repeatCount = 4
+//        animation.autoreverses = true
+//        animation.fromValue = NSValue(cgPoint: CGPoint(x: logoImageView.center.x - 10, y: logoImageView.center.y))
+//        animation.toValue = NSValue(cgPoint: CGPoint(x: logoImageView.center.x + 10, y: logoImageView.center.y))
+//        logoImageView.layer.add(animation, forKey: "position")
+//
+//    }
     
 }
 
