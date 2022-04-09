@@ -57,4 +57,25 @@ extension LoginViewController {
     }
 }
 
+#warning("Желтиков - UITapGestureRecognizer, UISwipeGestureRecognizer")
+//MARK: - Gestures
+extension LoginViewController {
+    func tapSwipeRegonizer() {
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTapGesture))
+        view.addGestureRecognizer(tapRecognizer)
+        
+        let swipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipeGesture))
+        swipeRecognizer.direction = .right
+        view.addGestureRecognizer(swipeRecognizer)
+    }
+    
+    @objc private func handleTapGesture(sender: UITapGestureRecognizer) {
+        loginTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        }
 
+    @objc private func handleSwipeGesture(sender: UISwipeGestureRecognizer) {
+        sender.direction = .right
+        self.dismiss(animated: true, completion: nil)
+    }
+}
