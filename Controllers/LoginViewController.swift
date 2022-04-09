@@ -15,6 +15,12 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        _ = try? URLBuilder()
+                    .with(host: "api.aqua.com")
+                    .with(port: 80)
+                    .with(path: "/auth")
+                    .build()
 
         tapSwipeRegonizer()
         setGradientBackground()

@@ -9,7 +9,7 @@ import Foundation
 
 struct DepositResponse: Codable {
     let data: DepositData?
-    let error: Error?
+    let error: DepositError?
     let status: Int
     let serverTime: Int
 }
@@ -29,7 +29,7 @@ struct DepositData: Codable {
 }
 
 
-struct Error: Codable {
+struct DepositError: Codable {
     let description: String
     let code: Int
     let type: String
