@@ -38,6 +38,7 @@
 		AA35415527F9A923002F70B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35415427F9A923002F70B1 /* LoginViewController.swift */; };
 		AA35416027F9AA36002F70B1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35415F27F9AA36002F70B1 /* RegisterViewController.swift */; };
 		AA35416327F9B0A6002F70B1 /* PresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35416227F9B0A6002F70B1 /* PresentTransition.swift */; };
+		AA4745532801AD140063B33B /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4745522801AD140063B33B /* URLBuilder.swift */; };
 		AA5B9E7627FF63830014C922 /* DismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B9E7527FF63830014C922 /* DismissTransition.swift */; };
 		AF634C86F3B4A96F09156B96 /* Pods_AQUA_AQUAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F955F3130BC467C75B72C14 /* Pods_AQUA_AQUAUITests.framework */; };
 /* End PBXBuildFile section */
@@ -100,6 +101,7 @@
 		AA35415427F9A923002F70B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA35415F27F9AA36002F70B1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AA35416227F9B0A6002F70B1 /* PresentTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTransition.swift; sourceTree = "<group>"; };
+		AA4745522801AD140063B33B /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
 		AA5B9E7527FF63830014C922 /* DismissTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissTransition.swift; sourceTree = "<group>"; };
 		C58E5753B8FECF1A8A12ECC2 /* Pods-AQUA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQUA.debug.xcconfig"; path = "Target Support Files/Pods-AQUA/Pods-AQUA.debug.xcconfig"; sourceTree = "<group>"; };
 		F55E18D7D6261C15ED181BFB /* Pods-AQUATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQUATests.release.xcconfig"; path = "Target Support Files/Pods-AQUATests/Pods-AQUATests.release.xcconfig"; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				1E8B1B8D27FE237C00862C26 /* ResponseData */,
+				AA4745522801AD140063B33B /* URLBuilder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				1E8B1B9D27FE237C00862C26 /* HistoryResponse.swift in Sources */,
 				1E8B1BA327FE237C00862C26 /* RegistrationResponse.swift in Sources */,
 				1E8B1B9A27FE237C00862C26 /* ConfigPaymentsResponse.swift in Sources */,
+				AA4745532801AD140063B33B /* URLBuilder.swift in Sources */,
 				AA35416027F9AA36002F70B1 /* RegisterViewController.swift in Sources */,
 				AA35411427F99FE8002F70B1 /* AQUA.xcdatamodeld in Sources */,
 				1E8B1BA027FE237C00862C26 /* WithdrawResponse.swift in Sources */,
