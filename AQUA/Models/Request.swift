@@ -11,7 +11,9 @@ import CloudKit
 
 class Request {
     
+    let postRequest = Request(pathToTheFolder: "", method: .post)
     private let apiURL = "https://aquatest/api/"
+    
     //MARK: - variables
     private var path: String
     private var method: HTTPMethod
