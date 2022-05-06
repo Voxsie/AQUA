@@ -18,6 +18,8 @@
 		1E8B1BA127FE237C00862C26 /* PayoffMethodsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9627FE237C00862C26 /* PayoffMethodsResponse.swift */; };
 		1E8B1BA227FE237C00862C26 /* TransferResponseswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9727FE237C00862C26 /* TransferResponseswift.swift */; };
 		1E8B1BA327FE237C00862C26 /* RegistrationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B1B9827FE237C00862C26 /* RegistrationResponse.swift */; };
+		1EB3C0B02825C3CD00129BCD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB3C0AF2825C3CD00129BCD /* Request.swift */; };
+		1EB3C0B22825C40A00129BCD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB3C0B12825C40A00129BCD /* User.swift */; };
 		83E5AA1E949B58D9F731BECD /* Pods_AQUATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBB02D93C016D44A9EAB530 /* Pods_AQUATests.framework */; };
 		A305B8C0E716132B7403222F /* Pods_AQUA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994523CFDFFA46AFCD950D6E /* Pods_AQUA.framework */; };
 		AA35410A27F99FE8002F70B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35410927F99FE8002F70B1 /* AppDelegate.swift */; };
@@ -73,6 +75,8 @@
 		1E8B1B9627FE237C00862C26 /* PayoffMethodsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffMethodsResponse.swift; sourceTree = "<group>"; };
 		1E8B1B9727FE237C00862C26 /* TransferResponseswift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferResponseswift.swift; sourceTree = "<group>"; };
 		1E8B1B9827FE237C00862C26 /* RegistrationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationResponse.swift; sourceTree = "<group>"; };
+		1EB3C0AF2825C3CD00129BCD /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Request.swift; path = ../../../../Request.swift; sourceTree = "<group>"; };
+		1EB3C0B12825C40A00129BCD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1F955F3130BC467C75B72C14 /* Pods_AQUA_AQUAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AQUA_AQUAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBB02D93C016D44A9EAB530 /* Pods_AQUATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AQUATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7D2D05CA21D9D7C731FCD6 /* Pods-AQUA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQUA.release.xcconfig"; path = "Target Support Files/Pods-AQUA/Pods-AQUA.release.xcconfig"; sourceTree = "<group>"; };
@@ -285,6 +289,8 @@
 			children = (
 				1E8B1B8D27FE237C00862C26 /* ResponseData */,
 				AA4745522801AD140063B33B /* URLBuilder.swift */,
+				1EB3C0AF2825C3CD00129BCD /* Request.swift */,
+				1EB3C0B12825C40A00129BCD /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -546,11 +552,13 @@
 				AA35415527F9A923002F70B1 /* LoginViewController.swift in Sources */,
 				1E8B1B9D27FE237C00862C26 /* HistoryResponse.swift in Sources */,
 				1E8B1BA327FE237C00862C26 /* RegistrationResponse.swift in Sources */,
+				1EB3C0B02825C3CD00129BCD /* Request.swift in Sources */,
 				1E8B1B9A27FE237C00862C26 /* ConfigPaymentsResponse.swift in Sources */,
 				AA4745532801AD140063B33B /* URLBuilder.swift in Sources */,
 				AA35416027F9AA36002F70B1 /* RegisterViewController.swift in Sources */,
 				AA35411427F99FE8002F70B1 /* AQUA.xcdatamodeld in Sources */,
 				1E8B1BA027FE237C00862C26 /* WithdrawResponse.swift in Sources */,
+				1EB3C0B22825C40A00129BCD /* User.swift in Sources */,
 				1E8B1B9E27FE237C00862C26 /* PaymentProcessResponse.swift in Sources */,
 				1E8B1BA227FE237C00862C26 /* TransferResponseswift.swift in Sources */,
 				AA35410A27F99FE8002F70B1 /* AppDelegate.swift in Sources */,
